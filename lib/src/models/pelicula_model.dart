@@ -62,7 +62,7 @@ class Pelicula {
     title = json['title'];
     voteAverage = json['vote_average'] / 1;
     overview = json['overview'];
-    releaseDate = json['release_date'];
+    releaseDate = json['release_date'] ?? 'No release date';
   }
 
   getPosterImg() {
